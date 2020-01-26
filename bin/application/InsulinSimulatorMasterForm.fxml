@@ -22,60 +22,67 @@
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="138.0" prefWidth="1600.0">
                <children>
-                  <Group layoutX="230.0" layoutY="43.0">
+                  <Group layoutX="226.0" layoutY="37.0">
                      <children>
-                        <ProgressBar fx:id="InsulinProgressBar" layoutX="100.0" prefWidth="200.0" progress="0.0" />
-                        <Label layoutX="9.0" layoutY="2.0" prefHeight="18.0" prefWidth="112.0" text="Insulin Bank" />
-                        <Label layoutX="-7.0" layoutY="41.0" prefHeight="18.0" prefWidth="123.0" text="Glucogan Bank" />
-                        <ProgressBar fx:id="GlucagonProgressBar" layoutX="100.0" layoutY="42.0" prefWidth="200.0" progress="0.0" />
-                        <ProgressIndicator fx:id="InsulinPgIc" layoutX="305.0" layoutY="-1.0" prefHeight="21.0" prefWidth="44.0" progress="1.0" />
-                        <ProgressIndicator fx:id="GlucagonPgIc" layoutX="304.0" layoutY="42.0" prefHeight="21.0" prefWidth="44.0" progress="1.0" />
-                        <ImageView fx:id="imgInsulinRefill" fitHeight="30.0" fitWidth="50.0" layoutX="354.0" layoutY="-7.0" onMouseClicked="#insulinRefillClick" pickOnBounds="true" preserveRatio="true">
+                        <ProgressBar fx:id="InsulinProgressBar" layoutX="100.0" layoutY="3.0" prefHeight="35.0" prefWidth="202.0" progress="0.0" />
+                        <Label layoutX="-1.0" layoutY="11.0" prefHeight="18.0" prefWidth="112.0" text="Insulin Bank" />
+                        <Label layoutX="-7.0" layoutY="54.0" prefHeight="18.0" prefWidth="123.0" text="Glucogan Bank" />
+                        <ProgressBar fx:id="GlucagonProgressBar" layoutX="100.0" layoutY="46.0" prefHeight="35.0" prefWidth="202.0" progress="0.0" />
+                        <ProgressIndicator fx:id="InsulinPgIc" layoutX="305.0" layoutY="7.0" prefHeight="21.0" prefWidth="44.0" progress="1.0" />
+                        <ProgressIndicator fx:id="GlucagonPgIc" layoutX="305.0" layoutY="49.0" prefHeight="21.0" prefWidth="44.0" progress="1.0" />
+                        <ImageView fx:id="imgInsulinRefill" fitHeight="30.0" fitWidth="50.0" layoutX="352.0" layoutY="5.0" onMouseClicked="#insulinRefillClick" pickOnBounds="true" preserveRatio="true">
                         <image>
 		                <Image url="img/refillIcon.PNG" />
 		                </image>
                         </ImageView>
-                        <ImageView fx:id="imgGlucagonRefill" fitHeight="30.0" fitWidth="50.0" layoutX="352.0" layoutY="34.0" onMouseClicked="#glucagonRefillClick" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imgGlucagonRefill" fitHeight="30.0" fitWidth="50.0" layoutX="352.0" layoutY="48.0" onMouseClicked="#glucagonRefillClick" pickOnBounds="true" preserveRatio="true">
        					<image>
                   		<Image url="img/refillIcon.PNG" />
                   		</image>                
                         </ImageView>
                      </children>
                   </Group>
-                  <ImageView fx:id="imgSettings" fitHeight="40.0" fitWidth="50.0" layoutX="889.0" layoutY="52.0" onMouseClicked="#settingsClick" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imgSettings" fitHeight="40.0" fitWidth="50.0" layoutX="885.0" layoutY="67.0" onMouseClicked="#settingsClick" pickOnBounds="true" preserveRatio="true">
                   <image>
                   <Image url="img/settings.png" />
                   </image>
                   </ImageView>
-                  <ImageView fx:id="imgBattery" fitHeight="40.0" fitWidth="50.0" layoutX="941.0" layoutY="52.0" onMouseClicked="#batteryChargeClick" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imgBattery" fitHeight="40.0" fitWidth="50.0" layoutX="941.0" layoutY="67.0" onMouseClicked="#batteryChargeClick" pickOnBounds="true" preserveRatio="true">
                   <image>
                   <Image url="img/fullCharge.PNG" />
                   </image>
                   </ImageView>
-                  <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="14.0" layoutY="52.0" onMouseClicked="#closeApplication" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="14.0" layoutY="62.0" onMouseClicked="#closeApplication" pickOnBounds="true" preserveRatio="true">
                   <image>
                   <Image url="img/powerIcon.PNG" />
                   </image>
                   </ImageView>
-                  <Button fx:id="btnAuto" ellipsisString="" layoutX="65.0" layoutY="52.0" minWidth="44.0" mnemonicParsing="false" onAction="#autoModeClick" opacity="0.96" prefHeight="40.0" prefWidth="68.0" style="-fx-background-color: #90EE90;-fx-text-fill:White;" text="Auto">
+                  <Button fx:id="btnAuto" ellipsisString="" layoutX="65.0" layoutY="59.0" minWidth="44.0" mnemonicParsing="false" onAction="#autoModeClick" opacity="0.96" prefHeight="40.0" prefWidth="68.0" style="-fx-background-color: #90EE90;-fx-text-fill:White;" text="Auto">
                      <opaqueInsets>
                         <Insets bottom="1.5" right="0.5" />
                      </opaqueInsets>
                   </Button>
-                  <Group fx:id="grpManualInj" layoutX="634.0" layoutY="47.0">
+                  <Group fx:id="grpManualInj" layoutX="636.0" layoutY="52.0">
                      <children>
-                        <Button fx:id="btnInsulinInj" layoutX="110.0" layoutY="-7.0" mnemonicParsing="false" onAction="#btnInsulinInj" text="Inject" />
-                        <TextField fx:id="txtInsulinInj" layoutY="-8.0" onAction="#btnInsulinInj" prefHeight="25.0" prefWidth="100.0" />
-                        <Button fx:id="btnGlucagonInj" layoutX="110.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnGlucagonInj" text="Inject" />
-                        <TextField fx:id="txtGlucagonInj" layoutY="31.0" prefHeight="25.0" prefWidth="100.0" />
+                        <Button fx:id="btnInsulinInj" layoutX="110.0" layoutY="-7.0" mnemonicParsing="false" onAction="#btnInsulinInj" prefHeight="35.0" text="Inject" />
+                        <TextField fx:id="txtInsulinInj" layoutY="-8.0" onAction="#btnInsulinInj" prefHeight="35.0" prefWidth="100.0" />
+                        <Button fx:id="btnGlucagonInj" layoutX="110.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnGlucagonInj" prefHeight="35.0" text="Inject" />
+                        <TextField fx:id="txtGlucagonInj" layoutY="31.0" prefHeight="35.0" prefWidth="100.0" />
                      </children>
                   </Group>
-                  <SplitPane layoutX="1039.0" prefHeight="173.0" prefWidth="385.0" />
+                  <SplitPane layoutX="1039.0" prefHeight="173.0" prefWidth="385.0">
+                     <items>
+                        <ImageView fitHeight="163.0" fitWidth="176.0">
+                           <image>
+                              <Image url="@../img/005_avatar_user_account_profile_man_guy_male-512.png" />
+                           </image>
+                        </ImageView>
+                     </items></SplitPane>
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="365.0" prefWidth="1600.0">
                <children>
-                  <LineChart fx:id="bloodSugarLevelChart" createSymbols="false" layoutX="36.0" layoutY="26.0" prefHeight="293.0" prefWidth="916.0" title="Blood Sugar Level">
+                  <LineChart fx:id="bloodSugarLevelChart" createSymbols="false" layoutX="36.0" layoutY="26.0" prefHeight="293.0" prefWidth="1343.0" title="Blood Sugar Level">
                     <xAxis>
                       <CategoryAxis side="BOTTOM" />
                     </xAxis>

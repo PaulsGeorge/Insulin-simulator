@@ -82,7 +82,7 @@
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="365.0" prefWidth="1600.0">
                <children>
-                  <LineChart fx:id="bloodSugarLevelChart" createSymbols="false" layoutX="36.0" layoutY="26.0" prefHeight="293.0" prefWidth="916.0" title="Blood Sugar Level">
+                  <LineChart fx:id="bloodSugarLevelChart" createSymbols="false" layoutX="36.0" layoutY="26.0" prefHeight="293.0" prefWidth="1343.0" title="Blood Sugar Level">
                     <xAxis>
                       <CategoryAxis side="BOTTOM" />
                     </xAxis>
